@@ -1,0 +1,132 @@
+/*General styles*/
+body{
+  margin:0;
+  font-famaily:arial,sans-serif;scroll-behavior: smooth;}
+header{
+  back ground:#333;
+  colour: white;
+  paddin:10px 20px;
+  }
+.navbar{
+  dispay:flax;
+  justify-conent:sace-between;
+  align-items:center;
+  }
+.nav-links{
+  list-style:non;
+  display:flax;
+  }
+.nav-links li{
+  margin:0 10px;
+  }
+.nav-link a{
+  colour: white;
+  test-decoration:none;
+}
+.menu-roggle{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+/*hero section*/
+.hero{
+  background:linear-gradient(toright,#4facfe,#00f2fe);
+  colour:white;
+  text-align:center;
+  padding:60px 20px;
+}
+.hero h1 span{
+  colour: yellow;
+}
+.btn{
+  background: white;
+  colour:#333;
+  padding: 10px 20px;
+  text-decoration:none;
+  margin-top:20px;
+  display: inline-block;
+  border-radius:5px;
+}
+/*about section*/
+.about {
+  padding:40px 20px;
+  text-align:center;
+  }
+.about content {
+  display:flex;
+  flex-wrap;
+  justify-content:center;
+  align-items:center;
+  }
+.about-content img{
+  max-width:150px;
+  border-radius:50%;
+  margin:20px;}
+/*projects section*/ 
+.projects{
+  padding:40px20px;
+  background:#f4f4f4;
+  text-align: center;
+}
+.project-gri{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.project-card{
+  background: white;
+  padding:20px;
+  border-radius:10px;
+  transition:transform 0.35;
+}
+.project-card:hover{
+  transform:scale(1.05);
+}
+/*contact section*/
+.contact{
+  padding:40px 20px;
+  text-align:center;
+}
+form {
+  max-width:400px;
+  margin:auto;
+  }
+input,texarea{
+  width:95%
+  padding:10px;
+  margin:10pxo;
+ }
+button{ 
+  background:#4fa049;
+  colour: white;
+  border:none;
+  paddig:10px;
+  width:95%;
+  cursor:pointer;
+  }
+button: hover{
+ background:#00c6ff;
+  }
+/*footer*/
+footer{
+  background:#2776;
+  colour: white;
+  padding:10px;
+  text-align:center;
+}
+/* Responsive navbar*/
+@media screen and(max-width:76px){
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    background:#333;
+    position: absolute;
+    top:60px;
+    right:0;
+    with:200px;
+    }
+  .nav-links.show{
+    disp: flex;
+  }
+  .menu-toggle{
+    display:block;}}
